@@ -33,139 +33,114 @@ $(document).ready(function(){
     var denise = 0;
     var tony = 0;
     
-    $("#chart td.hoh").text("5");
-    $("#chart td.nom").text("-1");
-    $("#chart td.pov").text("3");
-    $("#chart td.hn").text("-0.5");
-    $("#chart td.hoh-pov").text("8");
-    $("#chart td.nom-pov").text("2");
-    $("#chart td.nom-vetoed").text("0");
-    $("#chart td.nom-pov-vetoed").text("3");
-    $("#chart td.hn-nom").text("-1.5");
-    $("#chart td.hn-pov").text("2.5");
-    $("#chart td.hn-nom-pov").text("1.5");
-    $("#chart td.hn-nom-vetoed").text("-0.5");
-    $("#chart td.hn-nom-pov-vetoed").text("2.5");
-    $("#chart td.nom-evicted-pj").text("-4");
-    $("#chart td.hn-nom-evicted-pj").text("-4.5");
-    $("#chart td.nom-evicted-j").text("-3");
-    $("#chart td.hn-nom-evicted-j").text("-3.5");
-    $("#chart td.runner-up").text("15");
-    $("#chart td.winner").text("30");
-    $("#chart td.expelled").text("-5");
-    $("#chart td.dot").text("4");
-    $("#chart td.rk").text("4");
-    $("#chart td.hoh-dot").text("9");
-    $("#chart td.nom-rk").text("3");
-    $("#chart td.rk-nom").text("3");
-    $("#chart td.rk-nom-evicted-pj").text("0");
-    $("#chart td.nom-rk-evicted-pj").text("0");
-    $("#chart td.nom-dot-evicted-pj").text("0");
-    $("#chart td.nom-dot-evicted-j").text("1");
-    $("#chart td.hn-dot").text("3.5");
-    $("#chart td.nom-dot").text("3");
-    $("#chart td.pov-dot").text("7");
-    $("#chart td.fav").text("10");
-    $("#chart td.runner-up-fav").text("25");
-    $("#chart td.co-hoh1").text("2.5");
-    $("#chart td.co-hoh2").text("2.5");
+    $("#chart h4.reward-win").text("+5");
+    $("#chart h4.reward-guest").text("+3");
+    $("#chart h4.immunity-win").text("+10");
+    $("#chart h4.immunity-found").text("+15");
+    $("#chart h4.advantage").text("+12");
+    $("#chart h4.voted-out").text("-10");
+    $("#chart h4.home").text("-20");
+    $("#chart h4.edge-return").text("+10");
+    $("#chart h4.third-place").text("+25");
+    $("#chart h4.second-place").text("+50");
+    $("#chart h4.winner").text("+100");
     
-    $("td[name~='rob']").each(function() {
+    $("td[name~='rob'] h4").each(function() {
         if ($(this).html() != "") {
             rob = rob + parseFloat($(this).html());
         }
     });
-    $("td[name~='ben']").each(function() {
+    $("td[name~='ben'] h4").each(function() {
         if ($(this).html() != "") {
             ben = ben + parseFloat($(this).html());
         }
     });
-    $("td[name~='nick']").each(function() {
+    $("td[name~='nick'] h4").each(function() {
         if ($(this).html() != "") {
             nick = nick + parseFloat($(this).html());
         }
     });
-    $("td[name~='danni']").each(function() {
+    $("td[name~='danni'] h4").each(function() {
         if ($(this).html() != "") {
             danni = danni + parseFloat($(this).html());
         }
     });
-    $("td[name~='jeremy']").each(function() {
+    $("td[name~='jeremy'] h4").each(function() {
         if ($(this).html() != "") {
             jeremy = jeremy + parseFloat($(this).html());
         }
     });
-    $("td[name~='sarah']").each(function() {
+    $("td[name~='sarah'] h4").each(function() {
         if ($(this).html() != "") {
             sarah = sarah + parseFloat($(this).html());
         }
     });
-    $("td[name~='yul']").each(function() {
+    $("td[name~='yul'] h4").each(function() {
         if ($(this).html() != "") {
             yul = yul + parseFloat($(this).html());
         }
     });
-    $("td[name~='kim']").each(function() {
+    $("td[name~='kim'] h4").each(function() {
         if ($(this).html() != "") {
             kim = kim + parseFloat($(this).html());
         }
     });
-    $("td[name~='tyson']").each(function() {
+    $("td[name~='tyson'] h4").each(function() {
         if ($(this).html() != "") {
             tyson = tyson + parseFloat($(this).html());
         }
     });
-    $("td[name~='michele']").each(function() {
+    $("td[name~='michele'] h4").each(function() {
         if ($(this).html() != "") {
             michele = michele + parseFloat($(this).html());
         }
     });
-    $("td[name~='sophie']").each(function() {
+    $("td[name~='sophie'] h4").each(function() {
         if ($(this).html() != "") {
             sophie = sophie + parseFloat($(this).html());
         }
     });
-    $("td[name~='adam']").each(function() {
+    $("td[name~='adam'] h4").each(function() {
         if ($(this).html() != "") {
             adam = adam + parseFloat($(this).html());
         }
     });
-    $("td[name~='parvati']").each(function() {
+    $("td[name~='parvati'] h4").each(function() {
         if ($(this).html() != "") {
             parvati = parvati + parseFloat($(this).html());
         }
     });
-    $("td[name~='wendell']").each(function() {
+    $("td[name~='wendell'] h4").each(function() {
         if ($(this).html() != "") {
             wendell = wendell + parseFloat($(this).html());
         }
     });
-    $("td[name~='natalie']").each(function() {
+    $("td[name~='natalie'] h4").each(function() {
         if ($(this).html() != "") {
             natalie = natalie + parseFloat($(this).html());
         }
     });
-    $("td[name~='ethan']").each(function() {
+    $("td[name~='ethan'] h4").each(function() {
         if ($(this).html() != "") {
             ethan = ethan + parseFloat($(this).html());
         }
     });
-    $("td[name~='amber']").each(function() {
+    $("td[name~='amber'] h4").each(function() {
         if ($(this).html() != "") {
             amber = amber + parseFloat($(this).html());
         }
     });
-    $("td[name~='sandra']").each(function() {
+    $("td[name~='sandra'] h4").each(function() {
         if ($(this).html() != "") {
             sandra = sandra + parseFloat($(this).html());
         }
     });
-    $("td[name~='denise']").each(function() {
+    $("td[name~='denise'] h4").each(function() {
         if ($(this).html() != "") {
             denise = denise + parseFloat($(this).html());
         }
     });
-    $("td[name~='tony']").each(function() {
+    $("td[name~='tony'] h4").each(function() {
         if ($(this).html() != "") {
             tony = tony + parseFloat($(this).html());
         }
