@@ -1,7 +1,22 @@
 $(document).ready(function(){
     /* global $*/
-    $("#rules").click(function(){
+    $("#showRules").click(function(){
         $("#rulesDiv").slideToggle();
+		if($(this).text()=="Show Rules"){
+			$(this).text("Hide Rules");
+		} else {
+			$(this).text("Show Rules");
+		}
+    });
+    $("#showChart").click(function(){
+        $("#chartDiv").slideToggle();
+		if($(this).text()=="Show Chart"){
+			$(this).text("Hide Chart");
+			$("#rulesDiv").slideUp();
+			$("#showRules").text("Show Rules");
+		} else {
+			$(this).text("Show Chart");
+		}
     });
     
     var christian = 0;

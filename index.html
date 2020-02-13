@@ -149,7 +149,10 @@
     <body>
         <h1>Survivor 40: NFL (Neal Fantasy League)</h1>
         <h2>*** CONTAINS SPOILERS!!! ***</h2>
-        <div><button id="rules" class="btn btn-primary">Show/Hide Rules</button><hr/></div>
+        <div>
+			<button id="showRules" class="btn btn-primary">Show Rules</button>
+			<button id="showChart" class="btn btn-danger">Show Chart</button><hr/>
+		</div>
         
         <div id="rulesDiv" style="width:400px;margin:auto;display:none;">
             <table class="table table-striped table-bordered">
@@ -211,1273 +214,1275 @@
                 </tr>
             </table>
         </div>
-        <table class="table table-striped table-bordered" id="chart">
-            <tr>
-                <td></td>
-                <th colspan="6" class="kristy">Kristy &mdash; <span class="kristy"></span> points</th>
-                <td class="border"></td>
-                <th colspan="6" class="christian">Christian &mdash; <span class="christian"></span> points</th>
-                <td class="border"></td>
-                <th colspan="6" class="mom">Mom &mdash; <span class="mom"></span> points</th>
-                <td class="border"></td>
-                <th colspan="2" class="outcasts"><i>Outcasts</i> &mdash; <span class="outcasts"></span> points</th>
-            </tr>
-            <tr>
-                <th rowspan="2">Tribes:
-					<br/>
-					<i style="color:#D90D0E">Dakal</i>
-					<br/>
-					<i style="color:#0F24D9">Sele</i>
-					<br/>
-					<i style="color:black">(Merged&nbsp;Tribe)</i>
-					<br/>
-					<i style="color:grey">Extinction</i>
-				</th>
-				<td class="old-tribe sele"></td>
-				<td class="old-tribe sele"></td>
-				<td class="old-tribe dakal"></td>
-				<td class="old-tribe sele"></td>
-				<td class="old-tribe sele"></td>
-				<td class="old-tribe dakal"></td>
+		<div id="chartDiv" style="display:none;">
+			<table class="table table-striped table-bordered" id="chart">
+				<tr>
+					<td></td>
+					<th colspan="6" class="kristy">Kristy &mdash; <span class="kristy"></span> points</th>
 					<td class="border"></td>
-				<td class="old-tribe dakal"></td>
-				<td class="old-tribe dakal"></td>
-				<td class="old-tribe dakal"></td>
-				<td class="old-tribe sele"></td>
-				<td class="old-tribe dakal"></td>
-				<td class="old-tribe sele"></td>
+					<th colspan="6" class="christian">Christian &mdash; <span class="christian"></span> points</th>
 					<td class="border"></td>
-				<td class="old-tribe sele"></td>
-				<td class="old-tribe dakal"></td>
-				<td class="old-tribe sele"></td>
-				<td class="old-tribe sele"></td>
-				<td class="old-tribe dakal"></td>
-				<td class="old-tribe dakal"></td>
+					<th colspan="6" class="mom">Mom &mdash; <span class="mom"></span> points</th>
 					<td class="border"></td>
-				<td class="old-tribe sele"></td>
-				<td class="old-tribe dakal"></td>
-			</tr>
-			<tr>
-                <th class="name sele"><a href="https://www.cbs.com/shows/survivor/cast/216312"><img src="s40/rob.png" class="" /><br/>Rob</a>
-                <th class="name sele"><a href="https://www.cbs.com/shows/survivor/cast/216302"><img src="s40/ben.png" class="" /><br/>Ben</a>
-                <th class="name dakal"><a href="https://www.cbs.com/shows/survivor/cast/216310"><img src="s40/nick.png" class="" /><br/>Nick</a>
-                <th class="name sele"><a href="https://www.cbs.com/shows/survivor/cast/216303"><img src="s40/danni.png" class="" /><br/>Danni</a>
-                <th class="name sele"><a href="https://www.cbs.com/shows/survivor/cast/216306"><img src="s40/jeremy.png" class="" /><br/>Jeremy</a>
-                <th class="name dakal"><a href="https://www.cbs.com/shows/survivor/cast/216314"><img src="s40/sarah.png" class="" /><br/>Sarah</a>				
-                    <td class="border"></td>
-                <th class="name dakal"><a href="https://www.cbs.com/shows/survivor/cast/216319"><img src="s40/yul.png" class="" /><br/>Yul</a>
-                <th class="name dakal"><a href="https://www.cbs.com/shows/survivor/cast/216307"><img src="s40/kim.png" class="" /><br/>Kim</a>
-                <th class="name dakal"><a href="https://www.cbs.com/shows/survivor/cast/216317"><img src="s40/tyson.png" class="" /><br/>Tyson</a>
-                <th class="name sele"><a href="https://www.cbs.com/shows/survivor/cast/216308"><img src="s40/michele.png" class="" /><br/>Michele</a>
-                <th class="name dakal"><a href="https://www.cbs.com/shows/survivor/cast/216315"><img src="s40/sophie.png" class="" /><br/>Sophie</a>
-                <th class="name sele"><a href="https://www.cbs.com/shows/survivor/cast/216300"><img src="s40/adam.png" class="" /><br/>Adam</a>
-                    <td class="border"></td>
-                <th class="name sele"><a href="https://www.cbs.com/shows/survivor/cast/216311"><img src="s40/parvati.png" class="" /><br/>Parvati</a>
-                <th class="name dakal"><a href="https://www.cbs.com/shows/survivor/cast/216318"><img src="s40/wendell.png" class="" /><br/>Wendell</a>
-                <th class="name gone"><a href="https://www.cbs.com/shows/survivor/cast/216309"><img src="s40/natalie.png" class="" /><br/>Natalie</a>
-                <th class="name sele"><a href="https://www.cbs.com/shows/survivor/cast/216305"><img src="s40/ethan.png" class="" /><br/>Ethan</a>
-                <th class="name gone"><a href="https://www.cbs.com/shows/survivor/cast/216301"><img src="s40/amber.png" class="" /><br/>Amber</a>
-                <th class="name dakal"><a href="https://www.cbs.com/shows/survivor/cast/216313"><img src="s40/sandra.png" class="" /><br/>Sandra</a>
-                    <td class="border"></td>
-                <th class="name sele"><a href="https://www.cbs.com/shows/survivor/cast/216304"><img src="s40/denise.png" class="" /><br/>Denise</a>
-                <th class="name dakal"><a href="https://www.cbs.com/shows/survivor/cast/216316"><img src="s40/tony.png" class="" /><br/>Tony</a>
-            </tr>
-            <tr class="doneWeek">
-                <th rowspan='2'>Episode&nbsp;1</th>
-                <td name="rob">
-					<h4 class=""></h4>
-				</td>
-                <td name="ben">
-					<h4 class=""></h4>
-				</td>
-                <td name="nick">
-					<h4 class="reward-win"></h4>
-					<h4 class="immunity-win"></h4>
-				</td>
-                <td name="danni">
-					<h4 class=""></h4>
-				</td>
-                <td name="jeremy">
-					<h4 class=""></h4>
-				</td>
-                <td name="sarah">
-					<h4 class="reward-win"></h4>
-					<h4 class="immunity-win"></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="yul">
-					<h4 class="reward-win"></h4>
-					<h4 class="immunity-win"></h4>
-				</td>
-                <td name="kim">
-					<h4 class="reward-win"></h4>
-					<h4 class="immunity-win"></h4>
-				</td>
-                <td name="tyson">
-					<h4 class="reward-win"></h4>
-					<h4 class="immunity-win"></h4>
-				</td>
-                <td name="michele">
-					<h4 class=""></h4>
-				</td>
-                <td name="sophie">
-					<h4 class="reward-win"></h4>
-					<h4 class="immunity-win"></h4>
-				</td>
-                <td name="adam">
-					<h4 class="votes-against">-1</h4>
-				</td>
-                    <td class="border"></td>
-                <td name="parvati">
-					<h4 class=""></h4>
-				</td>
-                <td name="wendell">
-					<h4 class="reward-win"></h4>
-					<h4 class="immunity-win"></h4>
-				</td>
-                <td name="natalie">
-					<h4 class="votes-against">-7</h4>
-					<h4 class="voted-out"></h4>
-				</td>
-                <td name="ethan">
-					<h4 class=""></h4>
-				</td>
-                <td name="amber">
-					<h4 class="reward-win"></h4>
-					<h4 class="immunity-win"></h4>
-				</td>
-                <td name="sandra">
-					<h4 class="reward-win"></h4>
-					<h4 class="immunity-win"></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="denise">
-					<h4 class="votes-against">-2</h4>
-				</td>
-                <td name="tony">
-					<h4 class="reward-win"></h4>
-					<h4 class="immunity-win"></h4>
-				</td>
-            </tr>
-            <tr class="doneWeek">
-                <td name="rob">
-					<h4 class="immunity-win"></h4>
-				</td>
-                <td name="ben">
-					<h4 class="immunity-win"></h4>
-				</td>
-                <td name="nick">
-					<h4 class="votes-against">-1</h4>
-				</td>
-                <td name="danni">
-					<h4 class="immunity-win"></h4>
-				</td>
-                <td name="jeremy">
-					<h4 class="immunity-win"></h4>
-				</td>
-                <td name="sarah">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="yul">
-					<h4 class=""></h4>
-				</td>
-                <td name="kim">
-					<h4 class="votes-against">-3</h4>
-				</td>
-                <td name="tyson">
-					<h4 class=""></h4>
-				</td>
-                <td name="michele">
-					<h4 class="immunity-win"></h4>
-				</td>
-                <td name="sophie">
-					<h4 class=""></h4>
-				</td>
-                <td name="adam">
-					<h4 class="immunity-win"></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="parvati">
-					<h4 class="immunity-win"></h4>
-				</td>
-                <td name="wendell">
-					<h4 class=""></h4>
-				</td>
-                <td name="natalie" class="gone">
-					<h4 class="immunity-found"></h4>
-				</td>
-                <td name="ethan">
-					<h4 class="immunity-win"></h4>
-				</td>
-                <td name="amber">
-					<h4 class="votes-against">-6</h4>
-					<h4 class="voted-out"></h4>
-				</td>
-                <td name="sandra">
-					<h4 class="advantage"></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="denise">
-					<h4 class="immunity-win"></h4>
-				</td>
-                <td name="tony">
-					<h4 class=""></h4>
-				</td>
-            </tr>
-            <tr class="thisWeek">
-                <th>Episode&nbsp;2</th>
-                <td name="rob">
-					<h4 class=""></h4>
-				</td>
-                <td name="ben">
-					<h4 class=""></h4>
-				</td>
-                <td name="nick">
-					<h4 class=""></h4>
-				</td>
-                <td name="danni">
-					<h4 class=""></h4>
-				</td>
-                <td name="jeremy">
-					<h4 class=""></h4>
-				</td>
-                <td name="sarah">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="yul">
-					<h4 class=""></h4>
-				</td>
-                <td name="kim">
-					<h4 class=""></h4>
-				</td>
-                <td name="tyson">
-					<h4 class=""></h4>
-				</td>
-                <td name="michele">
-					<h4 class=""></h4>
-				</td>
-                <td name="sophie">
-					<h4 class=""></h4>
-				</td>
-                <td name="adam">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="parvati">
-					<h4 class=""></h4>
-				</td>
-                <td name="wendell">
-					<h4 class=""></h4>
-				</td>
-                <td name="natalie" class="gone">
-					<h4 class=""></h4>
-				</td>
-                <td name="ethan">
-					<h4 class=""></h4>
-				</td>
-                <td name="amber" class="gone">
-					<h4 class=""></h4>
-				</td>
-                <td name="sandra">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="denise">
-					<h4 class=""></h4>
-				</td>
-                <td name="tony">
-					<h4 class=""></h4>
-				</td>
-            </tr>
-            <tr class="">
-                <th>Episode&nbsp;3</th>
-                <td name="rob">
-					<h4 class=""></h4>
-				</td>
-                <td name="ben">
-					<h4 class=""></h4>
-				</td>
-                <td name="nick">
-					<h4 class=""></h4>
-				</td>
-                <td name="danni">
-					<h4 class=""></h4>
-				</td>
-                <td name="jeremy">
-					<h4 class=""></h4>
-				</td>
-                <td name="sarah">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="yul">
-					<h4 class=""></h4>
-				</td>
-                <td name="kim">
-					<h4 class=""></h4>
-				</td>
-                <td name="tyson">
-					<h4 class=""></h4>
-				</td>
-                <td name="michele">
-					<h4 class=""></h4>
-				</td>
-                <td name="sophie">
-					<h4 class=""></h4>
-				</td>
-                <td name="adam">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="parvati">
-					<h4 class=""></h4>
-				</td>
-                <td name="wendell">
-					<h4 class=""></h4>
-				</td>
-                <td name="natalie">
-					<h4 class=""></h4>
-				</td>
-                <td name="ethan">
-					<h4 class=""></h4>
-				</td>
-                <td name="amber">
-					<h4 class=""></h4>
-				</td>
-                <td name="sandra">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="denise">
-					<h4 class=""></h4>
-				</td>
-                <td name="tony">
-					<h4 class=""></h4>
-				</td>
-            </tr>
-            <tr class="">
-                <th>Episode&nbsp;4</th>
-                <td name="rob">
-					<h4 class=""></h4>
-				</td>
-                <td name="ben">
-					<h4 class=""></h4>
-				</td>
-                <td name="nick">
-					<h4 class=""></h4>
-				</td>
-                <td name="danni">
-					<h4 class=""></h4>
-				</td>
-                <td name="jeremy">
-					<h4 class=""></h4>
-				</td>
-                <td name="sarah">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="yul">
-					<h4 class=""></h4>
-				</td>
-                <td name="kim">
-					<h4 class=""></h4>
-				</td>
-                <td name="tyson">
-					<h4 class=""></h4>
-				</td>
-                <td name="michele">
-					<h4 class=""></h4>
-				</td>
-                <td name="sophie">
-					<h4 class=""></h4>
-				</td>
-                <td name="adam">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="parvati">
-					<h4 class=""></h4>
-				</td>
-                <td name="wendell">
-					<h4 class=""></h4>
-				</td>
-                <td name="natalie">
-					<h4 class=""></h4>
-				</td>
-                <td name="ethan">
-					<h4 class=""></h4>
-				</td>
-                <td name="amber">
-					<h4 class=""></h4>
-				</td>
-                <td name="sandra">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="denise">
-					<h4 class=""></h4>
-				</td>
-                <td name="tony">
-					<h4 class=""></h4>
-				</td>
-            </tr>
-            <tr class="">
-                <th>Episode&nbsp;5</th>
-                <td name="rob">
-					<h4 class=""></h4>
-				</td>
-                <td name="ben">
-					<h4 class=""></h4>
-				</td>
-                <td name="nick">
-					<h4 class=""></h4>
-				</td>
-                <td name="danni">
-					<h4 class=""></h4>
-				</td>
-                <td name="jeremy">
-					<h4 class=""></h4>
-				</td>
-                <td name="sarah">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="yul">
-					<h4 class=""></h4>
-				</td>
-                <td name="kim">
-					<h4 class=""></h4>
-				</td>
-                <td name="tyson">
-					<h4 class=""></h4>
-				</td>
-                <td name="michele">
-					<h4 class=""></h4>
-				</td>
-                <td name="sophie">
-					<h4 class=""></h4>
-				</td>
-                <td name="adam">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="parvati">
-					<h4 class=""></h4>
-				</td>
-                <td name="wendell">
-					<h4 class=""></h4>
-				</td>
-                <td name="natalie">
-					<h4 class=""></h4>
-				</td>
-                <td name="ethan">
-					<h4 class=""></h4>
-				</td>
-                <td name="amber">
-					<h4 class=""></h4>
-				</td>
-                <td name="sandra">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="denise">
-					<h4 class=""></h4>
-				</td>
-                <td name="tony">
-					<h4 class=""></h4>
-				</td>
-            </tr>
-            <tr class="">
-                <th>Episode&nbsp;6</th>
-                <td name="rob">
-					<h4 class=""></h4>
-				</td>
-                <td name="ben">
-					<h4 class=""></h4>
-				</td>
-                <td name="nick">
-					<h4 class=""></h4>
-				</td>
-                <td name="danni">
-					<h4 class=""></h4>
-				</td>
-                <td name="jeremy">
-					<h4 class=""></h4>
-				</td>
-                <td name="sarah">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="yul">
-					<h4 class=""></h4>
-				</td>
-                <td name="kim">
-					<h4 class=""></h4>
-				</td>
-                <td name="tyson">
-					<h4 class=""></h4>
-				</td>
-                <td name="michele">
-					<h4 class=""></h4>
-				</td>
-                <td name="sophie">
-					<h4 class=""></h4>
-				</td>
-                <td name="adam">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="parvati">
-					<h4 class=""></h4>
-				</td>
-                <td name="wendell">
-					<h4 class=""></h4>
-				</td>
-                <td name="natalie">
-					<h4 class=""></h4>
-				</td>
-                <td name="ethan">
-					<h4 class=""></h4>
-				</td>
-                <td name="amber">
-					<h4 class=""></h4>
-				</td>
-                <td name="sandra">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="denise">
-					<h4 class=""></h4>
-				</td>
-                <td name="tony">
-					<h4 class=""></h4>
-				</td>
-            </tr>
-            <tr class="">
-                <th>Episode&nbsp;7</th>
-                <td name="rob">
-					<h4 class=""></h4>
-				</td>
-                <td name="ben">
-					<h4 class=""></h4>
-				</td>
-                <td name="nick">
-					<h4 class=""></h4>
-				</td>
-                <td name="danni">
-					<h4 class=""></h4>
-				</td>
-                <td name="jeremy">
-					<h4 class=""></h4>
-				</td>
-                <td name="sarah">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="yul">
-					<h4 class=""></h4>
-				</td>
-                <td name="kim">
-					<h4 class=""></h4>
-				</td>
-                <td name="tyson">
-					<h4 class=""></h4>
-				</td>
-                <td name="michele">
-					<h4 class=""></h4>
-				</td>
-                <td name="sophie">
-					<h4 class=""></h4>
-				</td>
-                <td name="adam">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="parvati">
-					<h4 class=""></h4>
-				</td>
-                <td name="wendell">
-					<h4 class=""></h4>
-				</td>
-                <td name="natalie">
-					<h4 class=""></h4>
-				</td>
-                <td name="ethan">
-					<h4 class=""></h4>
-				</td>
-                <td name="amber">
-					<h4 class=""></h4>
-				</td>
-                <td name="sandra">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="denise">
-					<h4 class=""></h4>
-				</td>
-                <td name="tony">
-					<h4 class=""></h4>
-				</td>
-            </tr>
-            <tr class="">
-                <th>Episode&nbsp;8</th>
-                <td name="rob">
-					<h4 class=""></h4>
-				</td>
-                <td name="ben">
-					<h4 class=""></h4>
-				</td>
-                <td name="nick">
-					<h4 class=""></h4>
-				</td>
-                <td name="danni">
-					<h4 class=""></h4>
-				</td>
-                <td name="jeremy">
-					<h4 class=""></h4>
-				</td>
-                <td name="sarah">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="yul">
-					<h4 class=""></h4>
-				</td>
-                <td name="kim">
-					<h4 class=""></h4>
-				</td>
-                <td name="tyson">
-					<h4 class=""></h4>
-				</td>
-                <td name="michele">
-					<h4 class=""></h4>
-				</td>
-                <td name="sophie">
-					<h4 class=""></h4>
-				</td>
-                <td name="adam">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="parvati">
-					<h4 class=""></h4>
-				</td>
-                <td name="wendell">
-					<h4 class=""></h4>
-				</td>
-                <td name="natalie">
-					<h4 class=""></h4>
-				</td>
-                <td name="ethan">
-					<h4 class=""></h4>
-				</td>
-                <td name="amber">
-					<h4 class=""></h4>
-				</td>
-                <td name="sandra">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="denise">
-					<h4 class=""></h4>
-				</td>
-                <td name="tony">
-					<h4 class=""></h4>
-				</td>
-            </tr>
-            <tr class="">
-                <th>Episode&nbsp;9</th>
-                <td name="rob">
-					<h4 class=""></h4>
-				</td>
-                <td name="ben">
-					<h4 class=""></h4>
-				</td>
-                <td name="nick">
-					<h4 class=""></h4>
-				</td>
-                <td name="danni">
-					<h4 class=""></h4>
-				</td>
-                <td name="jeremy">
-					<h4 class=""></h4>
-				</td>
-                <td name="sarah">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="yul">
-					<h4 class=""></h4>
-				</td>
-                <td name="kim">
-					<h4 class=""></h4>
-				</td>
-                <td name="tyson">
-					<h4 class=""></h4>
-				</td>
-                <td name="michele">
-					<h4 class=""></h4>
-				</td>
-                <td name="sophie">
-					<h4 class=""></h4>
-				</td>
-                <td name="adam">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="parvati">
-					<h4 class=""></h4>
-				</td>
-                <td name="wendell">
-					<h4 class=""></h4>
-				</td>
-                <td name="natalie">
-					<h4 class=""></h4>
-				</td>
-                <td name="ethan">
-					<h4 class=""></h4>
-				</td>
-                <td name="amber">
-					<h4 class=""></h4>
-				</td>
-                <td name="sandra">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="denise">
-					<h4 class=""></h4>
-				</td>
-                <td name="tony">
-					<h4 class=""></h4>
-				</td>
-            </tr>
-            <tr class="">
-                <th>Episode&nbsp;10</th>
-                <td name="rob">
-					<h4 class=""></h4>
-				</td>
-                <td name="ben">
-					<h4 class=""></h4>
-				</td>
-                <td name="nick">
-					<h4 class=""></h4>
-				</td>
-                <td name="danni">
-					<h4 class=""></h4>
-				</td>
-                <td name="jeremy">
-					<h4 class=""></h4>
-				</td>
-                <td name="sarah">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="yul">
-					<h4 class=""></h4>
-				</td>
-                <td name="kim">
-					<h4 class=""></h4>
-				</td>
-                <td name="tyson">
-					<h4 class=""></h4>
-				</td>
-                <td name="michele">
-					<h4 class=""></h4>
-				</td>
-                <td name="sophie">
-					<h4 class=""></h4>
-				</td>
-                <td name="adam">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="parvati">
-					<h4 class=""></h4>
-				</td>
-                <td name="wendell">
-					<h4 class=""></h4>
-				</td>
-                <td name="natalie">
-					<h4 class=""></h4>
-				</td>
-                <td name="ethan">
-					<h4 class=""></h4>
-				</td>
-                <td name="amber">
-					<h4 class=""></h4>
-				</td>
-                <td name="sandra">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="denise">
-					<h4 class=""></h4>
-				</td>
-                <td name="tony">
-					<h4 class=""></h4>
-				</td>
-            </tr>
-            <tr class="">
-                <th>Episode&nbsp;11</th>
-                <td name="rob">
-					<h4 class=""></h4>
-				</td>
-                <td name="ben">
-					<h4 class=""></h4>
-				</td>
-                <td name="nick">
-					<h4 class=""></h4>
-				</td>
-                <td name="danni">
-					<h4 class=""></h4>
-				</td>
-                <td name="jeremy">
-					<h4 class=""></h4>
-				</td>
-                <td name="sarah">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="yul">
-					<h4 class=""></h4>
-				</td>
-                <td name="kim">
-					<h4 class=""></h4>
-				</td>
-                <td name="tyson">
-					<h4 class=""></h4>
-				</td>
-                <td name="michele">
-					<h4 class=""></h4>
-				</td>
-                <td name="sophie">
-					<h4 class=""></h4>
-				</td>
-                <td name="adam">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="parvati">
-					<h4 class=""></h4>
-				</td>
-                <td name="wendell">
-					<h4 class=""></h4>
-				</td>
-                <td name="natalie">
-					<h4 class=""></h4>
-				</td>
-                <td name="ethan">
-					<h4 class=""></h4>
-				</td>
-                <td name="amber">
-					<h4 class=""></h4>
-				</td>
-                <td name="sandra">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="denise">
-					<h4 class=""></h4>
-				</td>
-                <td name="tony">
-					<h4 class=""></h4>
-				</td>
-            </tr>
-            <tr class="">
-                <th>Episode&nbsp;12</th>
-                <td name="rob">
-					<h4 class=""></h4>
-				</td>
-                <td name="ben">
-					<h4 class=""></h4>
-				</td>
-                <td name="nick">
-					<h4 class=""></h4>
-				</td>
-                <td name="danni">
-					<h4 class=""></h4>
-				</td>
-                <td name="jeremy">
-					<h4 class=""></h4>
-				</td>
-                <td name="sarah">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="yul">
-					<h4 class=""></h4>
-				</td>
-                <td name="kim">
-					<h4 class=""></h4>
-				</td>
-                <td name="tyson">
-					<h4 class=""></h4>
-				</td>
-                <td name="michele">
-					<h4 class=""></h4>
-				</td>
-                <td name="sophie">
-					<h4 class=""></h4>
-				</td>
-                <td name="adam">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="parvati">
-					<h4 class=""></h4>
-				</td>
-                <td name="wendell">
-					<h4 class=""></h4>
-				</td>
-                <td name="natalie">
-					<h4 class=""></h4>
-				</td>
-                <td name="ethan">
-					<h4 class=""></h4>
-				</td>
-                <td name="amber">
-					<h4 class=""></h4>
-				</td>
-                <td name="sandra">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="denise">
-					<h4 class=""></h4>
-				</td>
-                <td name="tony">
-					<h4 class=""></h4>
-				</td>
-            </tr>
-            <tr class="">
-                <th rowspan='4' style='vertical-align: middle;'>FINALE</th>
-                <td name="rob">
-					<h4 class=""></h4>
-				</td>
-                <td name="ben">
-					<h4 class=""></h4>
-				</td>
-                <td name="nick">
-					<h4 class=""></h4>
-				</td>
-                <td name="danni">
-					<h4 class=""></h4>
-				</td>
-                <td name="jeremy">
-					<h4 class=""></h4>
-				</td>
-                <td name="sarah">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="yul">
-					<h4 class=""></h4>
-				</td>
-                <td name="kim">
-					<h4 class=""></h4>
-				</td>
-                <td name="tyson">
-					<h4 class=""></h4>
-				</td>
-                <td name="michele">
-					<h4 class=""></h4>
-				</td>
-                <td name="sophie">
-					<h4 class=""></h4>
-				</td>
-                <td name="adam">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="parvati">
-					<h4 class=""></h4>
-				</td>
-                <td name="wendell">
-					<h4 class=""></h4>
-				</td>
-                <td name="natalie">
-					<h4 class=""></h4>
-				</td>
-                <td name="ethan">
-					<h4 class=""></h4>
-				</td>
-                <td name="amber">
-					<h4 class=""></h4>
-				</td>
-                <td name="sandra">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="denise">
-					<h4 class=""></h4>
-				</td>
-                <td name="tony">
-					<h4 class=""></h4>
-				</td>
-            </tr>
-            <tr class="">
-                <td name="rob">
-					<h4 class=""></h4>
-				</td>
-                <td name="ben">
-					<h4 class=""></h4>
-				</td>
-                <td name="nick">
-					<h4 class=""></h4>
-				</td>
-                <td name="danni">
-					<h4 class=""></h4>
-				</td>
-                <td name="jeremy">
-					<h4 class=""></h4>
-				</td>
-                <td name="sarah">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="yul">
-					<h4 class=""></h4>
-				</td>
-                <td name="kim">
-					<h4 class=""></h4>
-				</td>
-                <td name="tyson">
-					<h4 class=""></h4>
-				</td>
-                <td name="michele">
-					<h4 class=""></h4>
-				</td>
-                <td name="sophie">
-					<h4 class=""></h4>
-				</td>
-                <td name="adam">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="parvati">
-					<h4 class=""></h4>
-				</td>
-                <td name="wendell">
-					<h4 class=""></h4>
-				</td>
-                <td name="natalie">
-					<h4 class=""></h4>
-				</td>
-                <td name="ethan">
-					<h4 class=""></h4>
-				</td>
-                <td name="amber">
-					<h4 class=""></h4>
-				</td>
-                <td name="sandra">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="denise">
-					<h4 class=""></h4>
-				</td>
-                <td name="tony">
-					<h4 class=""></h4>
-				</td>
-            </tr>
-            <tr class="">
-                <td name="rob">
-					<h4 class=""></h4>
-				</td>
-                <td name="ben">
-					<h4 class=""></h4>
-				</td>
-                <td name="nick">
-					<h4 class=""></h4>
-				</td>
-                <td name="danni">
-					<h4 class=""></h4>
-				</td>
-                <td name="jeremy">
-					<h4 class=""></h4>
-				</td>
-                <td name="sarah">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="yul">
-					<h4 class=""></h4>
-				</td>
-                <td name="kim">
-					<h4 class=""></h4>
-				</td>
-                <td name="tyson">
-					<h4 class=""></h4>
-				</td>
-                <td name="michele">
-					<h4 class=""></h4>
-				</td>
-                <td name="sophie">
-					<h4 class=""></h4>
-				</td>
-                <td name="adam">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="parvati">
-					<h4 class=""></h4>
-				</td>
-                <td name="wendell">
-					<h4 class=""></h4>
-				</td>
-                <td name="natalie">
-					<h4 class=""></h4>
-				</td>
-                <td name="ethan">
-					<h4 class=""></h4>
-				</td>
-                <td name="amber">
-					<h4 class=""></h4>
-				</td>
-                <td name="sandra">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="denise">
-					<h4 class=""></h4>
-				</td>
-                <td name="tony">
-					<h4 class=""></h4>
-				</td>
-            </tr>
-            <tr class="">
-                <td name="rob">
-					<h4 class=""></h4>
-				</td>
-                <td name="ben">
-					<h4 class=""></h4>
-				</td>
-                <td name="nick">
-					<h4 class=""></h4>
-				</td>
-                <td name="danni">
-					<h4 class=""></h4>
-				</td>
-                <td name="jeremy">
-					<h4 class=""></h4>
-				</td>
-                <td name="sarah">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="yul">
-					<h4 class=""></h4>
-				</td>
-                <td name="kim">
-					<h4 class=""></h4>
-				</td>
-                <td name="tyson">
-					<h4 class=""></h4>
-				</td>
-                <td name="michele">
-					<h4 class=""></h4>
-				</td>
-                <td name="sophie">
-					<h4 class=""></h4>
-				</td>
-                <td name="adam">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="parvati">
-					<h4 class=""></h4>
-				</td>
-                <td name="wendell">
-					<h4 class=""></h4>
-				</td>
-                <td name="natalie">
-					<h4 class=""></h4>
-				</td>
-                <td name="ethan">
-					<h4 class=""></h4>
-				</td>
-                <td name="amber">
-					<h4 class=""></h4>
-				</td>
-                <td name="sandra">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="denise">
-					<h4 class=""></h4>
-				</td>
-                <td name="tony">
-					<h4 class=""></h4>
-				</td>
-            </tr>
-            <tr class="info">
-                <th>Total</th>
-                <td name="rob_total">
-					<h4 class=""></h4>
-				</td>
-                <td name="ben_total">
-					<h4 class=""></h4>
-				</td>
-                <td name="nick_total">
-					<h4 class=""></h4>
-				</td>
-                <td name="danni_total">
-					<h4 class=""></h4>
-				</td>
-                <td name="jeremy_total">
-					<h4 class=""></h4>
-				</td>
-                <td name="sarah_total">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="yul_total">
-					<h4 class=""></h4>
-				</td>
-                <td name="kim_total">
-					<h4 class=""></h4>
-				</td>
-                <td name="tyson_total">
-					<h4 class=""></h4>
-				</td>
-                <td name="michele_total">
-					<h4 class=""></h4>
-				</td>
-                <td name="sophie_total">
-					<h4 class=""></h4>
-				</td>
-                <td name="adam_total">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="parvati_total">
-					<h4 class=""></h4>
-				</td>
-                <td name="wendell_total">
-					<h4 class=""></h4>
-				</td>
-                <td name="natalie_total">
-					<h4 class=""></h4>
-				</td>
-                <td name="ethan_total">
-					<h4 class=""></h4>
-				</td>
-                <td name="amber_total">
-					<h4 class=""></h4>
-				</td>
-                <td name="sandra_total">
-					<h4 class=""></h4>
-				</td>
-                    <td class="border"></td>
-                <td name="denise_total">
-					<h4 class=""></h4>
-				</td>
-                <td name="tony_total">
-					<h4 class=""></h4>
-				</td>
-            </tr>
-        </table>
+					<th colspan="2" class="outcasts"><i>Outcasts</i> &mdash; <span class="outcasts"></span> points</th>
+				</tr>
+				<tr>
+					<th rowspan="2">Tribes:
+						<br/>
+						<i style="color:#D90D0E">Dakal</i>
+						<br/>
+						<i style="color:#0F24D9">Sele</i>
+						<br/>
+						<i style="color:black">(Merged&nbsp;Tribe)</i>
+						<br/>
+						<i style="color:grey">Extinction</i>
+					</th>
+					<td class="old-tribe sele"></td>
+					<td class="old-tribe sele"></td>
+					<td class="old-tribe dakal"></td>
+					<td class="old-tribe sele"></td>
+					<td class="old-tribe sele"></td>
+					<td class="old-tribe dakal"></td>
+						<td class="border"></td>
+					<td class="old-tribe dakal"></td>
+					<td class="old-tribe dakal"></td>
+					<td class="old-tribe dakal"></td>
+					<td class="old-tribe sele"></td>
+					<td class="old-tribe dakal"></td>
+					<td class="old-tribe sele"></td>
+						<td class="border"></td>
+					<td class="old-tribe sele"></td>
+					<td class="old-tribe dakal"></td>
+					<td class="old-tribe sele"></td>
+					<td class="old-tribe sele"></td>
+					<td class="old-tribe dakal"></td>
+					<td class="old-tribe dakal"></td>
+						<td class="border"></td>
+					<td class="old-tribe sele"></td>
+					<td class="old-tribe dakal"></td>
+				</tr>
+				<tr>
+					<th class="name sele"><a href="https://www.cbs.com/shows/survivor/cast/216312"><img src="s40/rob.png" class="" /><br/>Rob</a>
+					<th class="name sele"><a href="https://www.cbs.com/shows/survivor/cast/216302"><img src="s40/ben.png" class="" /><br/>Ben</a>
+					<th class="name dakal"><a href="https://www.cbs.com/shows/survivor/cast/216310"><img src="s40/nick.png" class="" /><br/>Nick</a>
+					<th class="name sele"><a href="https://www.cbs.com/shows/survivor/cast/216303"><img src="s40/danni.png" class="" /><br/>Danni</a>
+					<th class="name sele"><a href="https://www.cbs.com/shows/survivor/cast/216306"><img src="s40/jeremy.png" class="" /><br/>Jeremy</a>
+					<th class="name dakal"><a href="https://www.cbs.com/shows/survivor/cast/216314"><img src="s40/sarah.png" class="" /><br/>Sarah</a>				
+						<td class="border"></td>
+					<th class="name dakal"><a href="https://www.cbs.com/shows/survivor/cast/216319"><img src="s40/yul.png" class="" /><br/>Yul</a>
+					<th class="name dakal"><a href="https://www.cbs.com/shows/survivor/cast/216307"><img src="s40/kim.png" class="" /><br/>Kim</a>
+					<th class="name dakal"><a href="https://www.cbs.com/shows/survivor/cast/216317"><img src="s40/tyson.png" class="" /><br/>Tyson</a>
+					<th class="name sele"><a href="https://www.cbs.com/shows/survivor/cast/216308"><img src="s40/michele.png" class="" /><br/>Michele</a>
+					<th class="name dakal"><a href="https://www.cbs.com/shows/survivor/cast/216315"><img src="s40/sophie.png" class="" /><br/>Sophie</a>
+					<th class="name sele"><a href="https://www.cbs.com/shows/survivor/cast/216300"><img src="s40/adam.png" class="" /><br/>Adam</a>
+						<td class="border"></td>
+					<th class="name sele"><a href="https://www.cbs.com/shows/survivor/cast/216311"><img src="s40/parvati.png" class="" /><br/>Parvati</a>
+					<th class="name dakal"><a href="https://www.cbs.com/shows/survivor/cast/216318"><img src="s40/wendell.png" class="" /><br/>Wendell</a>
+					<th class="name gone"><a href="https://www.cbs.com/shows/survivor/cast/216309"><img src="s40/natalie.png" class="" /><br/>Natalie</a>
+					<th class="name sele"><a href="https://www.cbs.com/shows/survivor/cast/216305"><img src="s40/ethan.png" class="" /><br/>Ethan</a>
+					<th class="name gone"><a href="https://www.cbs.com/shows/survivor/cast/216301"><img src="s40/amber.png" class="" /><br/>Amber</a>
+					<th class="name dakal"><a href="https://www.cbs.com/shows/survivor/cast/216313"><img src="s40/sandra.png" class="" /><br/>Sandra</a>
+						<td class="border"></td>
+					<th class="name sele"><a href="https://www.cbs.com/shows/survivor/cast/216304"><img src="s40/denise.png" class="" /><br/>Denise</a>
+					<th class="name dakal"><a href="https://www.cbs.com/shows/survivor/cast/216316"><img src="s40/tony.png" class="" /><br/>Tony</a>
+				</tr>
+				<tr class="doneWeek">
+					<th rowspan='2'>Episode&nbsp;1</th>
+					<td name="rob">
+						<h4 class=""></h4>
+					</td>
+					<td name="ben">
+						<h4 class=""></h4>
+					</td>
+					<td name="nick">
+						<h4 class="reward-win"></h4>
+						<h4 class="immunity-win"></h4>
+					</td>
+					<td name="danni">
+						<h4 class=""></h4>
+					</td>
+					<td name="jeremy">
+						<h4 class=""></h4>
+					</td>
+					<td name="sarah">
+						<h4 class="reward-win"></h4>
+						<h4 class="immunity-win"></h4>
+					</td>
+						<td class="border"></td>
+					<td name="yul">
+						<h4 class="reward-win"></h4>
+						<h4 class="immunity-win"></h4>
+					</td>
+					<td name="kim">
+						<h4 class="reward-win"></h4>
+						<h4 class="immunity-win"></h4>
+					</td>
+					<td name="tyson">
+						<h4 class="reward-win"></h4>
+						<h4 class="immunity-win"></h4>
+					</td>
+					<td name="michele">
+						<h4 class=""></h4>
+					</td>
+					<td name="sophie">
+						<h4 class="reward-win"></h4>
+						<h4 class="immunity-win"></h4>
+					</td>
+					<td name="adam">
+						<h4 class="votes-against">-1</h4>
+					</td>
+						<td class="border"></td>
+					<td name="parvati">
+						<h4 class=""></h4>
+					</td>
+					<td name="wendell">
+						<h4 class="reward-win"></h4>
+						<h4 class="immunity-win"></h4>
+					</td>
+					<td name="natalie">
+						<h4 class="votes-against">-7</h4>
+						<h4 class="voted-out"></h4>
+					</td>
+					<td name="ethan">
+						<h4 class=""></h4>
+					</td>
+					<td name="amber">
+						<h4 class="reward-win"></h4>
+						<h4 class="immunity-win"></h4>
+					</td>
+					<td name="sandra">
+						<h4 class="reward-win"></h4>
+						<h4 class="immunity-win"></h4>
+					</td>
+						<td class="border"></td>
+					<td name="denise">
+						<h4 class="votes-against">-2</h4>
+					</td>
+					<td name="tony">
+						<h4 class="reward-win"></h4>
+						<h4 class="immunity-win"></h4>
+					</td>
+				</tr>
+				<tr class="doneWeek">
+					<td name="rob">
+						<h4 class="immunity-win"></h4>
+					</td>
+					<td name="ben">
+						<h4 class="immunity-win"></h4>
+					</td>
+					<td name="nick">
+						<h4 class="votes-against">-1</h4>
+					</td>
+					<td name="danni">
+						<h4 class="immunity-win"></h4>
+					</td>
+					<td name="jeremy">
+						<h4 class="immunity-win"></h4>
+					</td>
+					<td name="sarah">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="yul">
+						<h4 class=""></h4>
+					</td>
+					<td name="kim">
+						<h4 class="votes-against">-3</h4>
+					</td>
+					<td name="tyson">
+						<h4 class=""></h4>
+					</td>
+					<td name="michele">
+						<h4 class="immunity-win"></h4>
+					</td>
+					<td name="sophie">
+						<h4 class=""></h4>
+					</td>
+					<td name="adam">
+						<h4 class="immunity-win"></h4>
+					</td>
+						<td class="border"></td>
+					<td name="parvati">
+						<h4 class="immunity-win"></h4>
+					</td>
+					<td name="wendell">
+						<h4 class=""></h4>
+					</td>
+					<td name="natalie" class="gone">
+						<h4 class="immunity-found"></h4>
+					</td>
+					<td name="ethan">
+						<h4 class="immunity-win"></h4>
+					</td>
+					<td name="amber">
+						<h4 class="votes-against">-6</h4>
+						<h4 class="voted-out"></h4>
+					</td>
+					<td name="sandra">
+						<h4 class="advantage"></h4>
+					</td>
+						<td class="border"></td>
+					<td name="denise">
+						<h4 class="immunity-win"></h4>
+					</td>
+					<td name="tony">
+						<h4 class=""></h4>
+					</td>
+				</tr>
+				<tr class="thisWeek">
+					<th>Episode&nbsp;2</th>
+					<td name="rob">
+						<h4 class=""></h4>
+					</td>
+					<td name="ben">
+						<h4 class=""></h4>
+					</td>
+					<td name="nick">
+						<h4 class=""></h4>
+					</td>
+					<td name="danni">
+						<h4 class=""></h4>
+					</td>
+					<td name="jeremy">
+						<h4 class=""></h4>
+					</td>
+					<td name="sarah">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="yul">
+						<h4 class=""></h4>
+					</td>
+					<td name="kim">
+						<h4 class=""></h4>
+					</td>
+					<td name="tyson">
+						<h4 class=""></h4>
+					</td>
+					<td name="michele">
+						<h4 class=""></h4>
+					</td>
+					<td name="sophie">
+						<h4 class=""></h4>
+					</td>
+					<td name="adam">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="parvati">
+						<h4 class=""></h4>
+					</td>
+					<td name="wendell">
+						<h4 class=""></h4>
+					</td>
+					<td name="natalie" class="gone">
+						<h4 class=""></h4>
+					</td>
+					<td name="ethan">
+						<h4 class=""></h4>
+					</td>
+					<td name="amber" class="gone">
+						<h4 class=""></h4>
+					</td>
+					<td name="sandra">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="denise">
+						<h4 class=""></h4>
+					</td>
+					<td name="tony">
+						<h4 class=""></h4>
+					</td>
+				</tr>
+				<tr class="">
+					<th>Episode&nbsp;3</th>
+					<td name="rob">
+						<h4 class=""></h4>
+					</td>
+					<td name="ben">
+						<h4 class=""></h4>
+					</td>
+					<td name="nick">
+						<h4 class=""></h4>
+					</td>
+					<td name="danni">
+						<h4 class=""></h4>
+					</td>
+					<td name="jeremy">
+						<h4 class=""></h4>
+					</td>
+					<td name="sarah">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="yul">
+						<h4 class=""></h4>
+					</td>
+					<td name="kim">
+						<h4 class=""></h4>
+					</td>
+					<td name="tyson">
+						<h4 class=""></h4>
+					</td>
+					<td name="michele">
+						<h4 class=""></h4>
+					</td>
+					<td name="sophie">
+						<h4 class=""></h4>
+					</td>
+					<td name="adam">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="parvati">
+						<h4 class=""></h4>
+					</td>
+					<td name="wendell">
+						<h4 class=""></h4>
+					</td>
+					<td name="natalie">
+						<h4 class=""></h4>
+					</td>
+					<td name="ethan">
+						<h4 class=""></h4>
+					</td>
+					<td name="amber">
+						<h4 class=""></h4>
+					</td>
+					<td name="sandra">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="denise">
+						<h4 class=""></h4>
+					</td>
+					<td name="tony">
+						<h4 class=""></h4>
+					</td>
+				</tr>
+				<tr class="">
+					<th>Episode&nbsp;4</th>
+					<td name="rob">
+						<h4 class=""></h4>
+					</td>
+					<td name="ben">
+						<h4 class=""></h4>
+					</td>
+					<td name="nick">
+						<h4 class=""></h4>
+					</td>
+					<td name="danni">
+						<h4 class=""></h4>
+					</td>
+					<td name="jeremy">
+						<h4 class=""></h4>
+					</td>
+					<td name="sarah">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="yul">
+						<h4 class=""></h4>
+					</td>
+					<td name="kim">
+						<h4 class=""></h4>
+					</td>
+					<td name="tyson">
+						<h4 class=""></h4>
+					</td>
+					<td name="michele">
+						<h4 class=""></h4>
+					</td>
+					<td name="sophie">
+						<h4 class=""></h4>
+					</td>
+					<td name="adam">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="parvati">
+						<h4 class=""></h4>
+					</td>
+					<td name="wendell">
+						<h4 class=""></h4>
+					</td>
+					<td name="natalie">
+						<h4 class=""></h4>
+					</td>
+					<td name="ethan">
+						<h4 class=""></h4>
+					</td>
+					<td name="amber">
+						<h4 class=""></h4>
+					</td>
+					<td name="sandra">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="denise">
+						<h4 class=""></h4>
+					</td>
+					<td name="tony">
+						<h4 class=""></h4>
+					</td>
+				</tr>
+				<tr class="">
+					<th>Episode&nbsp;5</th>
+					<td name="rob">
+						<h4 class=""></h4>
+					</td>
+					<td name="ben">
+						<h4 class=""></h4>
+					</td>
+					<td name="nick">
+						<h4 class=""></h4>
+					</td>
+					<td name="danni">
+						<h4 class=""></h4>
+					</td>
+					<td name="jeremy">
+						<h4 class=""></h4>
+					</td>
+					<td name="sarah">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="yul">
+						<h4 class=""></h4>
+					</td>
+					<td name="kim">
+						<h4 class=""></h4>
+					</td>
+					<td name="tyson">
+						<h4 class=""></h4>
+					</td>
+					<td name="michele">
+						<h4 class=""></h4>
+					</td>
+					<td name="sophie">
+						<h4 class=""></h4>
+					</td>
+					<td name="adam">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="parvati">
+						<h4 class=""></h4>
+					</td>
+					<td name="wendell">
+						<h4 class=""></h4>
+					</td>
+					<td name="natalie">
+						<h4 class=""></h4>
+					</td>
+					<td name="ethan">
+						<h4 class=""></h4>
+					</td>
+					<td name="amber">
+						<h4 class=""></h4>
+					</td>
+					<td name="sandra">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="denise">
+						<h4 class=""></h4>
+					</td>
+					<td name="tony">
+						<h4 class=""></h4>
+					</td>
+				</tr>
+				<tr class="">
+					<th>Episode&nbsp;6</th>
+					<td name="rob">
+						<h4 class=""></h4>
+					</td>
+					<td name="ben">
+						<h4 class=""></h4>
+					</td>
+					<td name="nick">
+						<h4 class=""></h4>
+					</td>
+					<td name="danni">
+						<h4 class=""></h4>
+					</td>
+					<td name="jeremy">
+						<h4 class=""></h4>
+					</td>
+					<td name="sarah">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="yul">
+						<h4 class=""></h4>
+					</td>
+					<td name="kim">
+						<h4 class=""></h4>
+					</td>
+					<td name="tyson">
+						<h4 class=""></h4>
+					</td>
+					<td name="michele">
+						<h4 class=""></h4>
+					</td>
+					<td name="sophie">
+						<h4 class=""></h4>
+					</td>
+					<td name="adam">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="parvati">
+						<h4 class=""></h4>
+					</td>
+					<td name="wendell">
+						<h4 class=""></h4>
+					</td>
+					<td name="natalie">
+						<h4 class=""></h4>
+					</td>
+					<td name="ethan">
+						<h4 class=""></h4>
+					</td>
+					<td name="amber">
+						<h4 class=""></h4>
+					</td>
+					<td name="sandra">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="denise">
+						<h4 class=""></h4>
+					</td>
+					<td name="tony">
+						<h4 class=""></h4>
+					</td>
+				</tr>
+				<tr class="">
+					<th>Episode&nbsp;7</th>
+					<td name="rob">
+						<h4 class=""></h4>
+					</td>
+					<td name="ben">
+						<h4 class=""></h4>
+					</td>
+					<td name="nick">
+						<h4 class=""></h4>
+					</td>
+					<td name="danni">
+						<h4 class=""></h4>
+					</td>
+					<td name="jeremy">
+						<h4 class=""></h4>
+					</td>
+					<td name="sarah">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="yul">
+						<h4 class=""></h4>
+					</td>
+					<td name="kim">
+						<h4 class=""></h4>
+					</td>
+					<td name="tyson">
+						<h4 class=""></h4>
+					</td>
+					<td name="michele">
+						<h4 class=""></h4>
+					</td>
+					<td name="sophie">
+						<h4 class=""></h4>
+					</td>
+					<td name="adam">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="parvati">
+						<h4 class=""></h4>
+					</td>
+					<td name="wendell">
+						<h4 class=""></h4>
+					</td>
+					<td name="natalie">
+						<h4 class=""></h4>
+					</td>
+					<td name="ethan">
+						<h4 class=""></h4>
+					</td>
+					<td name="amber">
+						<h4 class=""></h4>
+					</td>
+					<td name="sandra">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="denise">
+						<h4 class=""></h4>
+					</td>
+					<td name="tony">
+						<h4 class=""></h4>
+					</td>
+				</tr>
+				<tr class="">
+					<th>Episode&nbsp;8</th>
+					<td name="rob">
+						<h4 class=""></h4>
+					</td>
+					<td name="ben">
+						<h4 class=""></h4>
+					</td>
+					<td name="nick">
+						<h4 class=""></h4>
+					</td>
+					<td name="danni">
+						<h4 class=""></h4>
+					</td>
+					<td name="jeremy">
+						<h4 class=""></h4>
+					</td>
+					<td name="sarah">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="yul">
+						<h4 class=""></h4>
+					</td>
+					<td name="kim">
+						<h4 class=""></h4>
+					</td>
+					<td name="tyson">
+						<h4 class=""></h4>
+					</td>
+					<td name="michele">
+						<h4 class=""></h4>
+					</td>
+					<td name="sophie">
+						<h4 class=""></h4>
+					</td>
+					<td name="adam">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="parvati">
+						<h4 class=""></h4>
+					</td>
+					<td name="wendell">
+						<h4 class=""></h4>
+					</td>
+					<td name="natalie">
+						<h4 class=""></h4>
+					</td>
+					<td name="ethan">
+						<h4 class=""></h4>
+					</td>
+					<td name="amber">
+						<h4 class=""></h4>
+					</td>
+					<td name="sandra">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="denise">
+						<h4 class=""></h4>
+					</td>
+					<td name="tony">
+						<h4 class=""></h4>
+					</td>
+				</tr>
+				<tr class="">
+					<th>Episode&nbsp;9</th>
+					<td name="rob">
+						<h4 class=""></h4>
+					</td>
+					<td name="ben">
+						<h4 class=""></h4>
+					</td>
+					<td name="nick">
+						<h4 class=""></h4>
+					</td>
+					<td name="danni">
+						<h4 class=""></h4>
+					</td>
+					<td name="jeremy">
+						<h4 class=""></h4>
+					</td>
+					<td name="sarah">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="yul">
+						<h4 class=""></h4>
+					</td>
+					<td name="kim">
+						<h4 class=""></h4>
+					</td>
+					<td name="tyson">
+						<h4 class=""></h4>
+					</td>
+					<td name="michele">
+						<h4 class=""></h4>
+					</td>
+					<td name="sophie">
+						<h4 class=""></h4>
+					</td>
+					<td name="adam">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="parvati">
+						<h4 class=""></h4>
+					</td>
+					<td name="wendell">
+						<h4 class=""></h4>
+					</td>
+					<td name="natalie">
+						<h4 class=""></h4>
+					</td>
+					<td name="ethan">
+						<h4 class=""></h4>
+					</td>
+					<td name="amber">
+						<h4 class=""></h4>
+					</td>
+					<td name="sandra">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="denise">
+						<h4 class=""></h4>
+					</td>
+					<td name="tony">
+						<h4 class=""></h4>
+					</td>
+				</tr>
+				<tr class="">
+					<th>Episode&nbsp;10</th>
+					<td name="rob">
+						<h4 class=""></h4>
+					</td>
+					<td name="ben">
+						<h4 class=""></h4>
+					</td>
+					<td name="nick">
+						<h4 class=""></h4>
+					</td>
+					<td name="danni">
+						<h4 class=""></h4>
+					</td>
+					<td name="jeremy">
+						<h4 class=""></h4>
+					</td>
+					<td name="sarah">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="yul">
+						<h4 class=""></h4>
+					</td>
+					<td name="kim">
+						<h4 class=""></h4>
+					</td>
+					<td name="tyson">
+						<h4 class=""></h4>
+					</td>
+					<td name="michele">
+						<h4 class=""></h4>
+					</td>
+					<td name="sophie">
+						<h4 class=""></h4>
+					</td>
+					<td name="adam">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="parvati">
+						<h4 class=""></h4>
+					</td>
+					<td name="wendell">
+						<h4 class=""></h4>
+					</td>
+					<td name="natalie">
+						<h4 class=""></h4>
+					</td>
+					<td name="ethan">
+						<h4 class=""></h4>
+					</td>
+					<td name="amber">
+						<h4 class=""></h4>
+					</td>
+					<td name="sandra">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="denise">
+						<h4 class=""></h4>
+					</td>
+					<td name="tony">
+						<h4 class=""></h4>
+					</td>
+				</tr>
+				<tr class="">
+					<th>Episode&nbsp;11</th>
+					<td name="rob">
+						<h4 class=""></h4>
+					</td>
+					<td name="ben">
+						<h4 class=""></h4>
+					</td>
+					<td name="nick">
+						<h4 class=""></h4>
+					</td>
+					<td name="danni">
+						<h4 class=""></h4>
+					</td>
+					<td name="jeremy">
+						<h4 class=""></h4>
+					</td>
+					<td name="sarah">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="yul">
+						<h4 class=""></h4>
+					</td>
+					<td name="kim">
+						<h4 class=""></h4>
+					</td>
+					<td name="tyson">
+						<h4 class=""></h4>
+					</td>
+					<td name="michele">
+						<h4 class=""></h4>
+					</td>
+					<td name="sophie">
+						<h4 class=""></h4>
+					</td>
+					<td name="adam">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="parvati">
+						<h4 class=""></h4>
+					</td>
+					<td name="wendell">
+						<h4 class=""></h4>
+					</td>
+					<td name="natalie">
+						<h4 class=""></h4>
+					</td>
+					<td name="ethan">
+						<h4 class=""></h4>
+					</td>
+					<td name="amber">
+						<h4 class=""></h4>
+					</td>
+					<td name="sandra">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="denise">
+						<h4 class=""></h4>
+					</td>
+					<td name="tony">
+						<h4 class=""></h4>
+					</td>
+				</tr>
+				<tr class="">
+					<th>Episode&nbsp;12</th>
+					<td name="rob">
+						<h4 class=""></h4>
+					</td>
+					<td name="ben">
+						<h4 class=""></h4>
+					</td>
+					<td name="nick">
+						<h4 class=""></h4>
+					</td>
+					<td name="danni">
+						<h4 class=""></h4>
+					</td>
+					<td name="jeremy">
+						<h4 class=""></h4>
+					</td>
+					<td name="sarah">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="yul">
+						<h4 class=""></h4>
+					</td>
+					<td name="kim">
+						<h4 class=""></h4>
+					</td>
+					<td name="tyson">
+						<h4 class=""></h4>
+					</td>
+					<td name="michele">
+						<h4 class=""></h4>
+					</td>
+					<td name="sophie">
+						<h4 class=""></h4>
+					</td>
+					<td name="adam">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="parvati">
+						<h4 class=""></h4>
+					</td>
+					<td name="wendell">
+						<h4 class=""></h4>
+					</td>
+					<td name="natalie">
+						<h4 class=""></h4>
+					</td>
+					<td name="ethan">
+						<h4 class=""></h4>
+					</td>
+					<td name="amber">
+						<h4 class=""></h4>
+					</td>
+					<td name="sandra">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="denise">
+						<h4 class=""></h4>
+					</td>
+					<td name="tony">
+						<h4 class=""></h4>
+					</td>
+				</tr>
+				<tr class="">
+					<th rowspan='4' style='vertical-align: middle;'>FINALE</th>
+					<td name="rob">
+						<h4 class=""></h4>
+					</td>
+					<td name="ben">
+						<h4 class=""></h4>
+					</td>
+					<td name="nick">
+						<h4 class=""></h4>
+					</td>
+					<td name="danni">
+						<h4 class=""></h4>
+					</td>
+					<td name="jeremy">
+						<h4 class=""></h4>
+					</td>
+					<td name="sarah">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="yul">
+						<h4 class=""></h4>
+					</td>
+					<td name="kim">
+						<h4 class=""></h4>
+					</td>
+					<td name="tyson">
+						<h4 class=""></h4>
+					</td>
+					<td name="michele">
+						<h4 class=""></h4>
+					</td>
+					<td name="sophie">
+						<h4 class=""></h4>
+					</td>
+					<td name="adam">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="parvati">
+						<h4 class=""></h4>
+					</td>
+					<td name="wendell">
+						<h4 class=""></h4>
+					</td>
+					<td name="natalie">
+						<h4 class=""></h4>
+					</td>
+					<td name="ethan">
+						<h4 class=""></h4>
+					</td>
+					<td name="amber">
+						<h4 class=""></h4>
+					</td>
+					<td name="sandra">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="denise">
+						<h4 class=""></h4>
+					</td>
+					<td name="tony">
+						<h4 class=""></h4>
+					</td>
+				</tr>
+				<tr class="">
+					<td name="rob">
+						<h4 class=""></h4>
+					</td>
+					<td name="ben">
+						<h4 class=""></h4>
+					</td>
+					<td name="nick">
+						<h4 class=""></h4>
+					</td>
+					<td name="danni">
+						<h4 class=""></h4>
+					</td>
+					<td name="jeremy">
+						<h4 class=""></h4>
+					</td>
+					<td name="sarah">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="yul">
+						<h4 class=""></h4>
+					</td>
+					<td name="kim">
+						<h4 class=""></h4>
+					</td>
+					<td name="tyson">
+						<h4 class=""></h4>
+					</td>
+					<td name="michele">
+						<h4 class=""></h4>
+					</td>
+					<td name="sophie">
+						<h4 class=""></h4>
+					</td>
+					<td name="adam">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="parvati">
+						<h4 class=""></h4>
+					</td>
+					<td name="wendell">
+						<h4 class=""></h4>
+					</td>
+					<td name="natalie">
+						<h4 class=""></h4>
+					</td>
+					<td name="ethan">
+						<h4 class=""></h4>
+					</td>
+					<td name="amber">
+						<h4 class=""></h4>
+					</td>
+					<td name="sandra">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="denise">
+						<h4 class=""></h4>
+					</td>
+					<td name="tony">
+						<h4 class=""></h4>
+					</td>
+				</tr>
+				<tr class="">
+					<td name="rob">
+						<h4 class=""></h4>
+					</td>
+					<td name="ben">
+						<h4 class=""></h4>
+					</td>
+					<td name="nick">
+						<h4 class=""></h4>
+					</td>
+					<td name="danni">
+						<h4 class=""></h4>
+					</td>
+					<td name="jeremy">
+						<h4 class=""></h4>
+					</td>
+					<td name="sarah">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="yul">
+						<h4 class=""></h4>
+					</td>
+					<td name="kim">
+						<h4 class=""></h4>
+					</td>
+					<td name="tyson">
+						<h4 class=""></h4>
+					</td>
+					<td name="michele">
+						<h4 class=""></h4>
+					</td>
+					<td name="sophie">
+						<h4 class=""></h4>
+					</td>
+					<td name="adam">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="parvati">
+						<h4 class=""></h4>
+					</td>
+					<td name="wendell">
+						<h4 class=""></h4>
+					</td>
+					<td name="natalie">
+						<h4 class=""></h4>
+					</td>
+					<td name="ethan">
+						<h4 class=""></h4>
+					</td>
+					<td name="amber">
+						<h4 class=""></h4>
+					</td>
+					<td name="sandra">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="denise">
+						<h4 class=""></h4>
+					</td>
+					<td name="tony">
+						<h4 class=""></h4>
+					</td>
+				</tr>
+				<tr class="">
+					<td name="rob">
+						<h4 class=""></h4>
+					</td>
+					<td name="ben">
+						<h4 class=""></h4>
+					</td>
+					<td name="nick">
+						<h4 class=""></h4>
+					</td>
+					<td name="danni">
+						<h4 class=""></h4>
+					</td>
+					<td name="jeremy">
+						<h4 class=""></h4>
+					</td>
+					<td name="sarah">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="yul">
+						<h4 class=""></h4>
+					</td>
+					<td name="kim">
+						<h4 class=""></h4>
+					</td>
+					<td name="tyson">
+						<h4 class=""></h4>
+					</td>
+					<td name="michele">
+						<h4 class=""></h4>
+					</td>
+					<td name="sophie">
+						<h4 class=""></h4>
+					</td>
+					<td name="adam">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="parvati">
+						<h4 class=""></h4>
+					</td>
+					<td name="wendell">
+						<h4 class=""></h4>
+					</td>
+					<td name="natalie">
+						<h4 class=""></h4>
+					</td>
+					<td name="ethan">
+						<h4 class=""></h4>
+					</td>
+					<td name="amber">
+						<h4 class=""></h4>
+					</td>
+					<td name="sandra">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="denise">
+						<h4 class=""></h4>
+					</td>
+					<td name="tony">
+						<h4 class=""></h4>
+					</td>
+				</tr>
+				<tr class="info">
+					<th>Total</th>
+					<td name="rob_total">
+						<h4 class=""></h4>
+					</td>
+					<td name="ben_total">
+						<h4 class=""></h4>
+					</td>
+					<td name="nick_total">
+						<h4 class=""></h4>
+					</td>
+					<td name="danni_total">
+						<h4 class=""></h4>
+					</td>
+					<td name="jeremy_total">
+						<h4 class=""></h4>
+					</td>
+					<td name="sarah_total">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="yul_total">
+						<h4 class=""></h4>
+					</td>
+					<td name="kim_total">
+						<h4 class=""></h4>
+					</td>
+					<td name="tyson_total">
+						<h4 class=""></h4>
+					</td>
+					<td name="michele_total">
+						<h4 class=""></h4>
+					</td>
+					<td name="sophie_total">
+						<h4 class=""></h4>
+					</td>
+					<td name="adam_total">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="parvati_total">
+						<h4 class=""></h4>
+					</td>
+					<td name="wendell_total">
+						<h4 class=""></h4>
+					</td>
+					<td name="natalie_total">
+						<h4 class=""></h4>
+					</td>
+					<td name="ethan_total">
+						<h4 class=""></h4>
+					</td>
+					<td name="amber_total">
+						<h4 class=""></h4>
+					</td>
+					<td name="sandra_total">
+						<h4 class=""></h4>
+					</td>
+						<td class="border"></td>
+					<td name="denise_total">
+						<h4 class=""></h4>
+					</td>
+					<td name="tony_total">
+						<h4 class=""></h4>
+					</td>
+				</tr>
+			</table>
+		</div>
     </body>
 </html>
